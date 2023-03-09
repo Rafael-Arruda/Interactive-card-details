@@ -44,11 +44,13 @@
         <div class="box-name">
           <label>CardHolder Name</label>
           <input class="input-name" type="text" placeholder="e.g. Jane Appleseed"/>
+          <span class="name-error"></span>
         </div>
 
         <div class="box-number">
           <label>Card Number</label>
-          <input class="input-number" type="number" placeholder="e.g. 1234 5678 9123 000"/>
+          <input class="input-number" type="text" maxlength="16" placeholder="e.g. 1234 5678 9123 0000"/>
+          <span class="number-error"></span>
         </div>
 
         <div class="box-more-information">
@@ -59,12 +61,15 @@
               <input class="input-month" type="number" placeholder="MM"/>
               <input class="input-year" type="number" placeholder="YY"/>
             </div>
+            <span class="expiration-error"></span>
+
   
           </div>
           
           <div class="box-cvc">
             <label>Cvc</label>
             <input class="input-cvc" type="number" placeholder="e.g. 123">
+            <span class="cvc-error"></span>
           </div>
         </div>
         

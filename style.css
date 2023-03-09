@@ -131,7 +131,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    width: 400px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .box-name, .box-number, .box-expiration-date, .box-cvc {
@@ -150,15 +151,23 @@ form {
 .form-container input {
     width: 100%;
     outline: none;
-    padding: 5px 12px;
+    padding: 8px 12px;
     border-radius: 6px;
-    border: 1px solid #ddd;
+    border: 1px solid gray;
     font-size: 0.9em;
+}
+
+.form-container .input-error {
+    border: 1px solid red;
 }
 
 .box-more-information {
     display: flex;
     gap: 15px;
+}
+
+.box-cvc {
+    width: 100%;
 }
 
 .expiration-inputs {
@@ -170,7 +179,7 @@ form {
 }
 
 .form-container input::placeholder {
-    color: #ddd;
+    color: gray;
     font-size: 0.9em;
 }
 
@@ -178,9 +187,16 @@ form {
     background-color: hsl(278, 68%, 11%);
     color: #fff;
     border-radius: 6px;
-    padding: 6px;
+    padding: 10px;
     font-size: 0.9em;
     cursor: pointer;
+    border: none;
+}
+
+.name-error, .number-error, .expiration-error, .cvc-error {
+    margin-top: 10px;
+    color: red;
+    font-size: 0.7em;
 }
 
 @media(max-width: 1200px) {
