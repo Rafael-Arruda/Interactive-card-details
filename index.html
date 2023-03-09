@@ -20,21 +20,21 @@
         </div>
 
         <div class="card-number">
-          <span>0000 0000 0000 0000</span>
+          <span class="number">0000 0000 0000 0000</span>
         </div>
 
         <div class="card-name">
-          <span>JANE APPLESEED</span>
+          <span class="name">JANE APPLESEED</span>
         </div>
 
         <div class="card-date"> 
-          <span>00/00</span>
+          <span class="date">00/00</span>
         </div>
       </div>
 
       <div class="back-card">
         <div class="card-cvc">
-          <span>000</span>
+          <span class="cvc">000</span>
         </div>
       </div>
     </aside>
@@ -43,12 +43,12 @@
       <form>
         <div class="box-name">
           <label>CardHolder Name</label>
-          <input type="text" placeholder="e.g. Jane Appleseed"/>
+          <input class="input-name" type="text" placeholder="e.g. Jane Appleseed"/>
         </div>
 
         <div class="box-number">
           <label>Card Number</label>
-          <input type="text" placeholder="e.g. 1234 5678 9123 000"/>
+          <input class="input-number" type="number" placeholder="e.g. 1234 5678 9123 000"/>
         </div>
 
         <div class="box-more-information">
@@ -56,21 +56,23 @@
             <label>Exp. Date (MM/YY)</label>
             
             <div class="expiration-inputs">
-              <input type="number" placeholder="MM"/>
-              <input type="number" placeholder="YY"/>
+              <input class="input-month" type="number" placeholder="MM"/>
+              <input class="input-year" type="number" placeholder="YY"/>
             </div>
   
           </div>
           
           <div class="box-cvc">
             <label>Cvc</label>
-            <input type="number" placeholder="e.g. 123">
+            <input class="input-cvc" type="number" placeholder="e.g. 123">
           </div>
         </div>
         
-        <button>Confirm</button>
+        <button class="btn-confirm">Confirm</button>
       </form>
     </section>
   </article>
+
+  <script src="script.js"></script>
 </body>
 </html>

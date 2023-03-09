@@ -93,6 +93,7 @@ aside {
 .card-name span {
     font-size: 0.6em;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .card-date {
