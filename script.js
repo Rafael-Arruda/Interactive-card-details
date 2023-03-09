@@ -12,12 +12,17 @@ var inputYear = document.querySelector('.input-year')
 var inputCvc = document.querySelector('.input-cvc')
 
 var btnConfirm = document.querySelector('.btn-confirm')
+var btnContinue = document.querySelector('.btn-continue')
 
 /* Pegando span's de Erro*/
 var numberErrorMessage = document.querySelector('.number-error')
 var nameErrorMessage = document.querySelector('.name-error')
 var expirationErrorMessage = document.querySelector('.expiration-error')
 var cvcErrorMessage = document.querySelector('.cvc-error')
+
+/**/
+var formContainer = document.querySelector('.form-container')
+var boxConfirmation = document.querySelector('.box-confirmation')
 
 function checkName(name) {
     if(name !== '') {
@@ -108,8 +113,23 @@ btnConfirm.onclick = function(e) {
         inputMonth.value = ''
         inputYear.value = ''
         inputCvc.value = ''
+
+        formContainer.style.display = 'none'
+        boxConfirmation.style.display = 'flex'
     } else {
         return
     }
 
+}
+
+btnContinue.onclick = function(e) {
+    e.preventDefault()
+
+    cardNumber.innerHTML = '0000 0000 0000 0000'
+    cardDate.innerHTML = '00/00'
+    cardName.innerHTML = 'Jane Appleseed'
+    cardCvc.innerHTML = '000'
+
+    boxConfirmation.style.display = 'none'
+    formContainer.style.display = 'flex'
 }
