@@ -181,3 +181,69 @@ form {
     font-size: 0.9em;
     cursor: pointer;
 }
+
+@media(max-width: 1200px) {
+    article {
+        flex-direction: column;
+    }
+
+    aside {
+        background-image: url('./images/bg-main-mobile.png');
+        height: 30vh;
+        width: 100%;
+        max-width: none;
+        flex-direction: column-reverse;
+    }
+
+    .filled-ball {
+        width: 30px;
+        height: 30px;
+    }
+    .empty-ball {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .card-number {
+        top: 80px;
+    }
+    .card-name, .card-date {
+        top: 112px;
+    }
+    .card-cvc {
+        top: 62px;
+        right: 30px;
+    }
+
+    .card-number span,
+    .card-cvc {
+        font-size: 0.9em;
+    }
+    .card-name span,
+    .card-date span {
+        font-size: 0.7em;
+    }
+
+    .front-card, .back-card {
+        width: 280px;
+        height: 150px;
+    }
+
+    .front-card {
+        margin-left: -80px;
+        margin-bottom: -80px;
+        z-index: 999;
+    }
+
+    .back-card {
+        margin-bottom: -105px;
+        margin-left: 40px;
+    }
+
+    .form-container {
+        height: auto;
+        margin-top: 100px;
+        margin-left: 0;
+        padding: 0 15px;
+    }
+}
