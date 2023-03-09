@@ -286,6 +286,10 @@ form {
         padding: 0 15px;
     }
 
+    form {
+        padding-bottom: 40px;
+    }
+
     .box-confirmation {
         margin-top: 100px;
     }
