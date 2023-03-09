@@ -1,51 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <article>
+    <aside>
+      <div class="front-card">
+        <div class="balls">
+          <div class="filled-ball"></div>
+          <div class="empty-ball"></div>
+        </div>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+        <div class="card-number">
+          <span>0000 0000 0000 0000</span>
+        </div>
 
-  000
+        <div class="card-name">
+          <span>JANE APPLESEED</span>
+        </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+        <div class="card-date"> 
+          <span>00/00</span>
+        </div>
+      </div>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+      <div class="back-card">
+        <div class="card-cvc">
+          <span>000</span>
+        </div>
+      </div>
+    </aside>
+    
+    <section class="form-container">
+      <form>
+        <div class="box-name">
+          <label>CardHolder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed"/>
+        </div>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+        <div class="box-number">
+          <label>Card Number</label>
+          <input type="text" placeholder="e.g. 1234 5678 9123 000"/>
+        </div>
 
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
+        <div class="box-more-information">
+          <div class="box-expiration-date">
+            <label>Exp. Date (MM/YY)</label>
+            
+            <div class="expiration-inputs">
+              <input type="number" placeholder="MM"/>
+              <input type="number" placeholder="YY"/>
+            </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          </div>
+          
+          <div class="box-cvc">
+            <label>Cvc</label>
+            <input type="number" placeholder="e.g. 123">
+          </div>
+        </div>
+        
+        <button>Confirm</button>
+      </form>
+    </section>
+  </article>
 </body>
 </html>

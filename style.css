@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside {
+    max-width: 400px;
+    height: 100vh;
+    background-image: url('./images/bg-main-desktop.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.front-card, .back-card {
+    position: relative;
+    border-radius: 8px;
+    width: 320px;
+    height: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.front-card {
+    background-image: url('./images/bg-card-front.png');
+    margin-left: 250px;
+}
+
+.back-card {
+    background-image: url('./images/bg-card-back.png');
+    margin-left: 380px;
+}
+
+.balls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.filled-ball {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.empty-ball {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.card-number {
+    position: absolute;
+    top: 100px;
+    left: 25px;
+}
+.card-number span {
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.card-name {
+    position: absolute;
+    top: 140px;
+    left: 25px;
+    color: #fff;
+}
+.card-name span {
+    font-size: 0.6em;
+    letter-spacing: 1px;
+}
+
+.card-date {
+    position: absolute;
+    top: 140px;
+    right: 20px;
+}
+.card-date span {
+    color: #fff;
+    font-size: 0.6em;
+    letter-spacing: 1px;
+}
+
+.card-cvc {
+    position: absolute;
+    top: 75px;
+    right: 38px;
+}
+.card-cvc span {
+    font-size: 0.8em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.form-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 400px;
+}
+
+.box-name, .box-number, .box-expiration-date, .box-cvc {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    text-transform: uppercase;
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.form-container input {
+    width: 100%;
+    outline: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 0.9em;
+}
+
+.box-more-information {
+    display: flex;
+    gap: 15px;
+}
+
+.expiration-inputs {
+    display: flex;
+    gap: 8px;
+}
+.expiration-inputs input {
+    width: 65px;
+}
+
+.form-container input::placeholder {
+    color: #ddd;
+    font-size: 0.9em;
+}
+
+.form-container button {
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
